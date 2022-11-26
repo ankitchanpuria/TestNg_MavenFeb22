@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "source ~/.zshrc"
-                sh "mvn clean test"
+                
+                sh "/opt/homebrew/bin/mvn clean test"
                 //bat "mvn clean test"
             }
         }
