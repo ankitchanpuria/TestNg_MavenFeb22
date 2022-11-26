@@ -14,6 +14,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                source ~/.zshrc
                 sh "mvn clean test"
                 //bat "mvn clean test"
             }
